@@ -1,0 +1,23 @@
+def show_machine_description():
+    """Presenta una descripción personalizada y detallada de la máquina de Turing."""
+    print("\n--- 🌟 Mi Máquina de Turing Única 🌟 ---")
+    print("Esta máquina está configurada para procesar cadenas compuestas por los símbolos 'a' y 'b'.")
+    print("💡 Lenguaje aceptado: L(M) = { x ∈ {a, b}* | x contiene la subcadena 'bab' }\n")
+    print("🔹 Conjunto de Estados (Q) = {q0, q1, q2, qaccept, qreject}")
+    print("🔹 Alfabeto de Entrada = {a, b}")
+    print("🔹 Alfabeto de la Cinta (Tau, Σ) = {a, b, _}\n")
+    print("📜 Función de Transición (S):")
+    print("""
+        ➡️ S(q0, a) = (a, R, q1)
+        ➡️ S(q0, b) = (b, R, q0)
+        ➡️ S(q0, _) = (_, R, qreject)
+        ➡️ S(q1, a) = (a, R, q1)
+        ➡️ S(q1, b) = (b, R, q2)
+        ➡️ S(q1, _) = (_, R, qreject)
+        ➡️ S(q2, b) = (b, R, q0)
+        ➡️ S(q2, a) = (a, R, qaccept)
+        ➡️ S(q2, _) = (_, R, qreject)
+    """)
+    print("🔹 Estado Inicial: q0")
+    print("🔹 Estado de Aceptación: qaccept")
+    print("🔹 Estado de Rechazo: qreject\n")
