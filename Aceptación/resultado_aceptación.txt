@@ -1,8 +1,0 @@
-b [a] b b b a b
-b a [b] b b a b
-b a b [b] b a b
-b a b b [b] a b
-b a b b b [a] b
-b a b b b a [b]
-b a b b b a b [_]
-b a b b b a b _ [_]

@@ -1,0 +1,7 @@
+b [b] b b b a
+b b [b] b b a
+b b b [b] b a
+b b b b [b] a
+b b b b b [a]
+b b b b b a [_]
+b b b b b a _ [_]
